@@ -33,10 +33,14 @@ let masina = {
     locatie: {
         oras: "Bucuresti",
         tara: "Romania"
+    },
+    salut: function() {
+        console.log("Salutare sunt o " + this.nume + " si am o putere de " + this.putereMotor + " cai putere");
     }
 };
 
-console.log(masina.locatie);
+//masina.salut();
+//console.log(masina.locatie);
 
 let Parc = [
     {
@@ -61,5 +65,59 @@ let Parc = [
     }
 ];
  //console.log(Parc);
+
+function afisareMasini() {
+    for(i=0; i<Parc.length; i++) {
+        
+        if(Parc[i].inStoc === true) {
+            console.log("Masina " + Parc[i].nume + " are o putere de " + Parc[i].putereMotor + " cai putere" + " si este disponibila.");
+        }
+        else {
+            console.log("Masina " + Parc[i].nume + " are o putere de " + Parc[i].putereMotor + " cai putere" + " si nu este disponibila.")
+        }
+        
+    }
+}
+
+afisareMasini();
+
+a = 0;
+b = 5
+c = 8
+if(a < 10) {
+    //console.log("a este mai mic decat 10");
+} 
+else {
+  //  console.log("a este mai mare decat 10");
+}
+
+for(i=0; i<Parc.length; i++) {
+   // console.log("Masini disponibile: " + Parc[i]);
+}
+
+function salut(n){
+    //console.log("Salutare " + n);
+}
+
+salut("George");
+
+function datePersonale(nume1, varsta1, angajat1){
+    let ang;
+    
+    if(angajat1 === true) {
+        ang = "Angajat";
+    }
+    else {
+        ang = "Somer";
+    }
+    
+  //  console.log(nume1 + " are varsta de " + varsta1 + " si este angajat: " + ang);
+
+}
+
+//datePersonale("George", 22, false);
+
+
+
 
 </script>
