@@ -70,10 +70,10 @@ function afisareMasini() {
     for(i=0; i<Parc.length; i++) {
         
         if(Parc[i].inStoc === true) {
-            console.log("Masina " + Parc[i].nume + " are o putere de " + Parc[i].putereMotor + " cai putere" + " si este disponibila.");
+            //console.log("Masina " + Parc[i].nume + " are o putere de " + Parc[i].putereMotor + " cai putere" + " si este disponibila.");
         }
         else {
-            console.log("Masina " + Parc[i].nume + " are o putere de " + Parc[i].putereMotor + " cai putere" + " si nu este disponibila.")
+            //console.log("Masina " + Parc[i].nume + " are o putere de " + Parc[i].putereMotor + " cai putere" + " si nu este disponibila.")
         }
         
     }
@@ -116,8 +116,14 @@ function datePersonale(nume1, varsta1, angajat1){
 }
 
 //datePersonale("George", 22, false);
+x = 2
+afiseazaVarsta = (x) =>{
+    let x = 2;
+    console.log('Varsta este: ' + x);
+}
 
 
-
-
+salut = () =>{
+    console.log('Salut');
+}
 </script>
